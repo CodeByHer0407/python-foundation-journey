@@ -1,42 +1,27 @@
 # Python Engineering Foundations 🚀
 
-This repository documents my structured journey to mastering Python for Backend and AI Engineering roles.
+A structured repository focused on mastering Python fundamentals for Backend and AI Engineering roles.
 
-## Objective
-Build strong Python fundamentals with real implementations and clean engineering practices.
+## Goals
+- Build strong Python core concepts
+- Implement data structures from scratch
+- Improve problem-solving ability
+- Write clean, modular code
 
 ## Repository Structure
 
 python-basics/
-    variables_and_datatypes.py
-    control_flow.py
+    variables-and-datatypes.py
+    control-flow.py
 
-oop/
-    classes_and_objects.py
-    inheritance.py
+(Additional modules coming soon)
 
-data-structures/
-    arrays.py
-    strings.py
-    hashing.py
-
-algorithms/
-    recursion.py
-    sorting.py
-
-mini-implementations/
-    simple_logger.py
-    custom_stack.py
-
-## What This Repo Focuses On
-- Writing clean Python code
-- OOP design
-- Problem solving
+## Engineering Focus
+- Code readability
 - Time complexity understanding
-- Engineering habits (modular code, readability)
+- Modular design
+- Clean commit practices
 
-## Start Date
-3rd March 2026
+---
 
-## Status
-In Progress
+Status: In Progress
