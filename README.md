@@ -1,4 +1,4 @@
-# Python Engineering Foundations 🚀
+# Python Engineering Foundations 
 
 A structured repository focused on mastering Python fundamentals for Backend and AI Engineering roles.
 
