@@ -10,11 +10,25 @@ A structured repository focused on mastering Python fundamentals for Backend and
 
 ## Repository Structure
 
-python-basics/
+python-fundamentals/
    - variables-and-datatypes.ipynb
-   - control-flow.ipynb
    - conditional-statements.ipynb
    - loops.ipynb
+
+data-structures/
+   - dictionaries.ipynb
+   - lists.ipynb
+   - sets.ipynb
+   - tuples.ipynb
+
+functions/
+   - functions-basics.ipynb
+   - lambda-filter-map.ipynb
+
+problem-solving/
+
+
+
 
 (Additional modules coming soon)
 
