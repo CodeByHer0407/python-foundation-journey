@@ -11,8 +11,10 @@ A structured repository focused on mastering Python fundamentals for Backend and
 ## Repository Structure
 
 python-basics/
-    variables-and-datatypes.py
-    control-flow.py
+   - variables-and-datatypes.ipynb
+   - control-flow.ipynb
+   - conditional-statements.ipynb
+   - loops.ipynb
 
 (Additional modules coming soon)
 
