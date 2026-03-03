@@ -36,7 +36,7 @@ mini-implementations/
 - Engineering habits (modular code, readability)
 
 ## Start Date
-28 Feb 2026
+3rd March 2026
 
 ## Status
 In Progress
