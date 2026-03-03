@@ -1,18 +1,42 @@
-# Python Foundation Journey 🚀
+# Python Engineering Foundations 🚀
 
-Start Date: 28 Feb 2026
-Goal: Build strong Python and DSA foundation for AI Backend Engineering role by 2026.
+This repository documents my structured journey to mastering Python for Backend and AI Engineering roles.
 
-## Plan
-- Month 1: Python Basics + Arrays/Strings
-- Month 2: OOP + Recursion + Sorting
-- Month 3: Medium DSA + Pattern Recognition
+## Objective
+Build strong Python fundamentals with real implementations and clean engineering practices.
 
+## Repository Structure
 
-# Structure
-- week1_basics
-- week2_functions
-- week3_oop
-- dsa_practice
+python-basics/
+    variables_and_datatypes.py
+    control_flow.py
 
-This repository documents my 90-day disciplined coding phase.
+oop/
+    classes_and_objects.py
+    inheritance.py
+
+data-structures/
+    arrays.py
+    strings.py
+    hashing.py
+
+algorithms/
+    recursion.py
+    sorting.py
+
+mini-implementations/
+    simple_logger.py
+    custom_stack.py
+
+## What This Repo Focuses On
+- Writing clean Python code
+- OOP design
+- Problem solving
+- Time complexity understanding
+- Engineering habits (modular code, readability)
+
+## Start Date
+28 Feb 2026
+
+## Status
+In Progress
