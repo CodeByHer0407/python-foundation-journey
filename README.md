@@ -29,7 +29,7 @@ functions/
 
 
 problem-solving/
-
+   - patterns.ipynb
 
 
 
