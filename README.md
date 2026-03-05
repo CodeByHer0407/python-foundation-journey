@@ -23,7 +23,10 @@ data-structures/
 
 functions/
    - functions-basics.ipynb
+   - functions-examples.ipynb
    - lambda-filter-map.ipynb
+   - pseudocode-example.md
+
 
 problem-solving/
 
