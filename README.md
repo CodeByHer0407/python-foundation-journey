@@ -30,6 +30,7 @@ functions/
 
 problem-solving/
    - patterns.ipynb
+   - functions.ipynb
 
 
 
