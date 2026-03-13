@@ -1,47 +1,21 @@
-# Python Engineering Foundations 
+# Python Engineering Foundations
 
-A structured repository focused on mastering Python fundamentals for Backend and AI Engineering roles.
+**Last Updated:** March 2026
 
-## Goals
-- Build strong Python core concepts
-- Implement data structures from scratch
-- Improve problem-solving ability
-- Write clean, modular code
+Structured learning repository for mastering **Python fundamentals for Backend and AI Engineering roles.**
 
-## Repository Structure
-
-python-fundamentals/
-   - variables-and-datatypes.ipynb
-   - conditional-statements.ipynb
-   - loops.ipynb
-
-data-structures/
-   - dictionaries.ipynb
-   - lists.ipynb
-   - sets.ipynb
-   - tuples.ipynb
-
-functions/
-   - functions-basics.ipynb
-   - functions-examples.ipynb
-   - lambda-filter-map.ipynb
-   - pseudocode-example.md
-
-
-problem-solving/
-   - patterns.ipynb
-   - functions.ipynb
-
-
-
-(Additional modules coming soon)
-
-## Engineering Focus
-- Code readability
-- Time complexity understanding
-- Modular design
-- Clean commit practices
+**Author:** Saloni Azad
+**Focus:** Python • Problem Solving • Backend Engineering
+**Status:** Active Development
 
 ---
 
-Status: In Progress
+## About This Repository
+
+This repository documents my journey of strengthening Python fundamentals and building problem-solving skills required for backend and AI engineering roles.
+
+The goal is to develop a strong engineering foundation through **consistent practice, structured learning, and clean coding practices**.
+
+The repository contains organized notebooks covering core Python concepts, data structures, functions, and problem-solving exercises.
+
+---
