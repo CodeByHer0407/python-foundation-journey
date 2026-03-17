@@ -7,10 +7,14 @@ A number is even if it is divisible by 2.
 
 def is_even(n):
     return n%2 == 0
-    
-num = int(input("Enter any number: "))
-result = is_even(num)
-if result:
-    print(f"Yes, {num} is an even number.")
-else:
-    print(f"Sorry, {num} is not an even number!")
+
+def main():   
+    num = int(input("Enter any number: "))
+    result = is_even(num)
+    if result:
+        print(f"Yes, {num} is an even number.")
+    else:
+        print(f"Sorry, {num} is not an even number!")
+
+if "__name__" == "__main__":
+    main()

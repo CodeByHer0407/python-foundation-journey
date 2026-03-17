@@ -6,5 +6,10 @@ def sum_of_even_numbers(n):
         current_even_num += 2
     return total_sum
 
-num = int(input("Enter any number: "))
-print(f"Sum of first {num} even numbers: {sum_of_even_numbers(num)}")
+
+def main():
+    num = int(input("Enter any number: "))
+    print(f"Sum of first {num} even numbers: {sum_of_even_numbers(num)}")
+
+if "__name__" == "__main__":
+    main()

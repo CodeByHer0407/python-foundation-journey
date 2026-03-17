@@ -10,10 +10,14 @@ def is_perfect_square(num):
     return False
 
 
-n = int(input("Enter any number: "))
+def main():
+    n = int(input("Enter any number: "))
+    result = is_perfect_square(n)
+    if result:
+        print(f"Yes, {n} is a perfect square!")
+    else:
+        print(f"Sorry, {n} is not a perfect square!")
 
-result = is_perfect_square(n)
-if result:
-    print(f"Yes, {n} is a perfect square!")
-else:
-    print(f"Sorry, {n} is not a perfect square!")
+
+if "__name__" == "__main__":
+    main()
