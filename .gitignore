@@ -4,3 +4,21 @@ __pycache__/
 .vscode/
 .env
 .ipynb_checkpoints/
+
+# Jupyter runtime files (not just checkpoints)
+*/.ipynb_checkpoints/
+**/.ipynb_checkpoints/
+
+# More Python cache patterns
+*.pyo
+*.pyd
+**/__pycache__/
+
+# OS clutter
+.DS_Store
+Thumbs.db
+
+# Distribution/build (for when you start packaging)
+dist/
+build/
+*.egg-info/
