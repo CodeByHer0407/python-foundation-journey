@@ -17,7 +17,7 @@ Approach:
 4. Final check:
    - If `left == len(s)` → all characters matched → return True
    - Else → return False
-   
+
 Time Complexity: O(m)
 - We traverse string t once
 
@@ -28,17 +28,13 @@ Space Complexity: O(1)
 def is_subsequence(s, t):
     left = 0
     right = 0
-    n = len(s)
-    m = len(t)
+    n = len(t)
+    m = len(s)
     while left < n and right < m:
-        if s[left] == t[right]:
+        if t[left] == s[right]:
             left += 1
-            right += 1
-        else: 
-            right += 1
-    if left == n:
-        return True
-    return False
+        right += 1
+    return left == n
         
 
 def main():
@@ -49,3 +45,6 @@ def main():
         print(f"Yes, '{str2} is a subsequence of '{str1}''")
     else:
         print(f"Sorry, '{str2} is not a subsequence of '{str1}''")
+
+if __name__ == "__main__":
+    main()
