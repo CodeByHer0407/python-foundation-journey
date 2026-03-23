@@ -9,7 +9,7 @@
 - [x] Python Fundamentals — variables, types, operators, I/O
 - [x] Functions — definitions, args/kwargs, scope, lambdas
 - [x] Data Structures — lists, dicts, sets, tuples (core notebooks)
-
+- [x] Strings
 ---
 
 ## 🔄 In Progress

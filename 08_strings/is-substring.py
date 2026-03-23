@@ -47,11 +47,14 @@ def is_substring(s, t):
     
       
 
+def main():
+    str1 = input("Enter the first string: ")
+    str2 = input("Enter the second string: ")
+    result = is_substring(str1, str2)
+    if result:
+        print(f"Yes, '{str2}' is a substring of '{str1}'")
+    else:
+        print(f"Sorry, '{str2}' is not a substring of '{str1}'")
 
-str1 = input("Enter the first string: ")
-str2 = input("Enter the second string: ")
-result = is_substring(str1, str2)
-if result:
-    print(f"Yes, '{str2}' is a substring of '{str1}'")
-else:
-    print(f"Sorry, '{str2}' is not a substring of '{str1}'")
+if __name__ ==  "__main__":
+    main()

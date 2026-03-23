@@ -37,5 +37,9 @@ def longest_word_length(s):
     return max_cnt
 
 
-strs = input("Enter a string of your choice: ")
-print(f"Length of longest word in '{strs}': {longest_word_length(strs)}")
+def main():
+    strs = input("Enter a string of your choice: ")
+    print(f"Length of longest word in '{strs}': {longest_word_length(strs)}")
+
+if __name__ ==  "__main__":
+    main()
