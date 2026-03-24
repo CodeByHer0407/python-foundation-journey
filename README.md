@@ -67,7 +67,7 @@ Notebooks are great for explaining *what* and *why*. Scripts are great for pract
 | `04_oops` | Classes, inheritance, dunder methods | `.ipynb` | 🔄 In Progress |
 | `05_file-handling` | File I/O, CSV, JSON | `.ipynb` | 🔄 In Progress |
 | `06_exception-handling` | try/except, custom errors | `.ipynb` | 🔄 In Progress |
-| `07_problem-solving` | Patterns, challenges | `.py` / `.ipynb` | 🔄 Ongoing |
+| `07_problem-solving` | Patterns, challenges | `.py` / `.ipynb` | ✅ Done |
 
 ---
 
