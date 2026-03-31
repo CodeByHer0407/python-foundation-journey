@@ -5,13 +5,13 @@
 ```
 Constructor Method (__init__): Initializes two attributes, num1 and num2.
 
-Method add: Takes no arguments and returns the sum of num1 and num2.
+- Method add: Takes no arguments and returns the sum of num1 and num2.
 
-Method subtract: Takes no arguments and returns the result of subtracting num2 from num1.
+- Method subtract: Takes no arguments and returns the result of subtracting num2 from num1.
 
-Method multiply: Takes a single argument factor and returns the product of num1 and factor.
+- Method multiply: Takes a single argument factor and returns the product of num1 and factor.
 
-Method divide: Takes a single argument divisor and returns the result of dividing num1 by divisor. If divisor is zero, print an error message and return None.
+- Method divide: Takes a single argument divisor and returns the result of dividing num1 by divisor. If divisor is zero, print an error message and return None.
 
 Example:
 
