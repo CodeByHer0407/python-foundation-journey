@@ -1,5 +1,11 @@
-def print_indexes(arr1):
-    pass
+def print_indexes(arr1, val):
+    if len(arr1) == 0:
+        return []
+    if arr1[0] == val:
+        return [0]
+    result = print_indexes(arr1[1:], val)
+    return result
+
 
 def create_array(n):
     arr = []
@@ -8,12 +14,14 @@ def create_array(n):
         arr.append(val)
     return arr
 
+
 def main():
     n = int(input("Enter the size of the array: "))
     my_arr1 = create_array(n)
 
     print(f"The array is: {my_arr1}")
-
+    element = int(input("Enter the element whose first index you want to search: "))
+    print(f"The first index of {element}: {print_indexes(my_arr1, element)}")
 
 if __name__ == "__main__":
     main()

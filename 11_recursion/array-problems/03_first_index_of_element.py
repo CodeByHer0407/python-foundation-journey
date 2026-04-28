@@ -8,6 +8,7 @@ def first_index(arr1, val):
         return -1
     return 1 + result
 
+
 def last_index(arr1, val):
     if len(arr1) == 0 :
         return -1
