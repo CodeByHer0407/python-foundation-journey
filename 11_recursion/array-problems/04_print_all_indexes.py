@@ -1,14 +1,17 @@
 def print_indexes(arr1, val):
     if len(arr1) == 0:
         return []
-    if arr1[0] == val:
-        return [0]
     result = print_indexes(arr1[1:], val)
-    return result
+    shifted = [i+1 for i in result]
+    if arr1[0] == val:
+        return [0] + shifted
+    else:
+        return shifted
 
 
 def create_array(n):
     arr = []
+
     for i in range(n):
         val = int(input(f"Enter element {i+1}: "))
         arr.append(val)
