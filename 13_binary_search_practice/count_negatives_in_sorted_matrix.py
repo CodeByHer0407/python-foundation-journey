@@ -1,3 +1,89 @@
+# ============================================================
+# COUNT NEGATIVE NUMBERS IN A SORTED MATRIX
+# ============================================================
+
+"""
+Problem Statement:
+------------------
+Given a matrix where each row is sorted in non-decreasing
+order, count the total number of negative numbers.
+
+Example:
+---------
+Input:
+grid = [
+    [4, 3, 2, -1],
+    [3, 2, 1, -1],
+    [1, 1, -1, -2],
+    [-1, -1, -2, -3]
+]
+
+Output:
+8
+
+
+------------------------------------------------------------
+BRUTE FORCE APPROACH
+------------------------------------------------------------
+
+Approach:
+----------
+1. Traverse every element of the matrix.
+2. If the element is negative, increase the count.
+
+Time Complexity:
+-----------------
+O(n * m)
+
+Space Complexity:
+------------------
+O(1)
+
+
+
+------------------------------------------------------------
+OPTIMIZED APPROACH (BINARY SEARCH)
+------------------------------------------------------------
+
+Observation:
+-------------
+Each row is already sorted.
+
+This means:
+- All negative numbers will appear together at the end.
+- We can use Binary Search to find the FIRST negative number.
+
+Approach:
+----------
+1. For every row:
+      - Find the first negative element using Binary Search.
+      - Count all elements after that index.
+
+2. Add counts from all rows.
+
+Example:
+---------
+Row = [4, 2, 1, -1, -3]
+
+First negative index = 3
+
+Negative count:
+len(row) - 3 = 2
+
+
+Time Complexity:
+-----------------
+For each row:
+    O(log m)
+
+For entire matrix:
+    O(n log m)
+
+Space Complexity:
+------------------
+O(1)
+"""
+
 # BRUTE FORCE APPROACH
 def countNegatives(grid):
     cnt = 0
