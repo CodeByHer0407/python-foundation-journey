@@ -141,4 +141,4 @@ num = create_lst(n)
 print(f"My Grid: {num}")
 
 target = int(input("Enter any element: "))
-print(f"The smallest element greater than {target} is: {searchRange(num, target)}")
+print(f"The first and last position of {target} is: {searchRange(num, target)}")

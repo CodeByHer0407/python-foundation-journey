@@ -75,5 +75,6 @@ grid = create_lst(n)
 print(f"My Grid: {grid}")
 
 target = input("Enter any element: ")
-print(f"The smallest element greater than {target} is: {next_greatest_letter(grid, target)}")
+print(f"Next greatest letter after {target} is: {next_greatest_letter(grid, target)}")
+
    

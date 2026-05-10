@@ -137,4 +137,5 @@ grid = create_matrix(n, m)
 print(f"My Grid: {grid}")
 
 #print(f"There are {countNegatives(grid)} negative numbers in the matrix.")
-print(f"Number of negatives in {grid}: {countNegatives_optimized(grid)}")         
+print(f"Total number of negative numbers: {countNegatives_optimized(grid)}")
+        
