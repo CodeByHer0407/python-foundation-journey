@@ -1,79 +1,98 @@
 # ============================================================
-# FIND FIRST AND LAST POSITION OF ELEMENT IN SORTED ARRAY
+# FIND FIRST AND LAST OCCURRENCE OF AN ELEMENT
 # ============================================================
 
 """
 Problem Statement:
 ------------------
-Given a sorted array of integers nums and a target value,
-return the starting and ending position of the target.
+Given a sorted array of integers and a target value,
+find the first and last occurrence of the target.
 
-If the target is not found, return [-1, -1].
+If the target does not exist, return -1.
+
 
 Example:
 ---------
 Input:
-nums = [5, 7, 7, 8, 8, 10]
+nums = [2, 4, 6, 8, 8, 8, 11, 13]
 target = 8
 
 Output:
-[3, 4]
-
-
-Input:
-nums = [5, 7, 7, 8, 8, 10]
-target = 6
-
-Output:
-[-1, -1]
+First Occurrence = 3
+Last Occurrence = 5
 
 
 
 ------------------------------------------------------------
-APPROACH
+BRUTE FORCE APPROACH
+------------------------------------------------------------
+
+Approach:
+----------
+1. Traverse the entire array.
+2. When target is found:
+      - store first occurrence only once
+      - keep updating last occurrence
+
+Time Complexity:
+-----------------
+O(n)
+
+Space Complexity:
+------------------
+O(1)
+
+
+
+------------------------------------------------------------
+OPTIMIZED APPROACH (BINARY SEARCH)
 ------------------------------------------------------------
 
 Observation:
 -------------
-Since the array is sorted, Binary Search can be used.
+The array is sorted.
 
-We need:
-1. First occurrence of target
-2. Last occurrence of target
-
-So we perform Binary Search twice.
+This allows Binary Search to efficiently find:
+1. First occurrence
+2. Last occurrence
 
 
 ------------------------------------------------------------
-FINDING FIRST OCCURRENCE
+FIND FIRST OCCURRENCE
 ------------------------------------------------------------
 
+Logic:
+-------
 1. If nums[mid] == target:
       - store mid as answer
       - continue searching on LEFT side
         because an earlier occurrence may exist
 
-2. If nums[mid] < target:
-      - move RIGHT
-
-3. Otherwise:
+2. If nums[mid] > target:
       - move LEFT
 
+3. Otherwise:
+      - move RIGHT
+
+
 
 ------------------------------------------------------------
-FINDING LAST OCCURRENCE
+FIND LAST OCCURRENCE
 ------------------------------------------------------------
 
+Logic:
+-------
 1. If nums[mid] == target:
       - store mid as answer
       - continue searching on RIGHT side
         because a later occurrence may exist
 
-2. If nums[mid] < target:
-      - move RIGHT
+2. If nums[mid] > target:
+      - move LEFT
 
 3. Otherwise:
-      - move LEFT
+      - move RIGHT
+
 
 
 ------------------------------------------------------------
@@ -86,6 +105,7 @@ O(log n) + O(log n)
 = O(log n)
 
 
+
 ------------------------------------------------------------
 SPACE COMPLEXITY
 ------------------------------------------------------------
@@ -94,37 +114,46 @@ O(1)
 """
 
 
-def searchRange(nums, target):
-    def find_first():
-        first = -1
-        low, high = 0, len(nums)-1
-        while low <= high:
-            mid = (low + high)//2
-            if nums[mid] ==  target:
-                first = mid
-                high = mid - 1
-            elif nums[mid] < target:
-                low = mid + 1
-            else:
-                high = mid - 1
-        return first
-    
-    def find_last():
-        last = -1
-        low, high = 0, len(nums)-1
-        while low <= high:
-            mid = (low + high)//2
-            if nums[mid] == target:
-                last = mid
-                low = mid + 1
-            elif nums[mid] > target:
-                high = mid - 1
-            else:
-                low = mid + 1
-        return last
-    return [find_first(), find_last()]
-        
+def find_first(num, target):
+    first = -1
+    size = len(num) - 1
+    low, high = 0, size
+    while low <= high:
+        mid = (low + high) // 2
+        if num[mid] == target:
+            first = mid
+            high = mid - 1      # Search further on LEFT side
+        elif num[mid] > target:
+            high = mid - 1
+        else:
+            low = mid + 1
+    return first
 
+
+def find_last(num, target):
+    last = -1
+    size = len(num) - 1
+    low, high = 0, size
+    while low <= high:
+        mid = (low + high) // 2
+        if num[mid] == target:
+            last = mid
+            low = mid + 1       # Search further on RIGHT side
+        elif num[mid] > target:
+            high = mid - 1
+        else:
+            low = mid + 1
+    return last
+
+def find_first_and_last_brute(num, target):
+    first = -1
+    last = -1
+    for i in range(len(num)):
+        if num[i] == target:
+            if first == -1:
+                first = i
+            last = i
+    return first, last
 
 def create_lst(n):
     lst = list()
@@ -141,4 +170,6 @@ num = create_lst(n)
 print(f"My Grid: {num}")
 
 target = int(input("Enter any element: "))
-print(f"The first and last position of {target} is: {searchRange(num, target)}")
+#print(f"The first and last position of {target} is: {find_first_and_last_brute(num, target)}")
+print(f"The first occurrence of {target} is at index: {find_first(num, target)}")
+print(f"The last occurrence of {target} is at index: {find_last(num, target)}")
