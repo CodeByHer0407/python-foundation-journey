@@ -113,6 +113,22 @@ SPACE COMPLEXITY
 O(1)
 """
 
+def count_occurrences(nums, target):
+    first = find_first(nums, target)
+    if first == -1:
+        return (-1, -1)
+    last = find_last(nums, target)
+    return (first, last)
+
+
+
+def count_occurrences_brute(nums, target):
+    cnt = 0
+    for i in range(len(nums)):
+        if nums[i] == target:
+            cnt += 1
+    return cnt
+
 
 def find_first(num, target):
     first = -1
@@ -173,3 +189,9 @@ target = int(input("Enter any element: "))
 #print(f"The first and last position of {target} is: {find_first_and_last_brute(num, target)}")
 print(f"The first occurrence of {target} is at index: {find_first(num, target)}")
 print(f"The last occurrence of {target} is at index: {find_last(num, target)}")
+
+first, last = count_occurrences(num, target)
+if first == -1:
+    print(f"{target} does not exist in the list.")
+else:
+    print(f"{target} occurs {last - first + 1} times.")
