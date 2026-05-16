@@ -125,7 +125,7 @@ def search_insert(nums, target):
 
 
 def create_list(n):
-        return [int(input(f"Enter value {i}: ")) for i in range(n)]
+    return [int(input(f"Enter value {i}: ")) for i in range(n)]
 
 
 

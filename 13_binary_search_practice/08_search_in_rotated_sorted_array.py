@@ -103,7 +103,7 @@ def search_index_duplicates(num, target):
 
 
 def create_list(n):
-        return [int(input(f"Enter value {i}: ")) for i in range(n)]
+    return [int(input(f"Enter value {i}: ")) for i in range(n)]
 
 
 n = int(input("Enter the size of the list: "))

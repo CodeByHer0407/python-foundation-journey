@@ -46,7 +46,7 @@ def findMin_optimized(nums):
     return nums[low]
 
 def create_list(n):
-        return [int(input(f"Enter value {i}: ")) for i in range(n)]
+    return [int(input(f"Enter value {i}: ")) for i in range(n)]
 
 
 n = int(input("Enter the size of the list: "))
