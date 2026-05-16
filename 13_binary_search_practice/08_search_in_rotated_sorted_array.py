@@ -67,18 +67,14 @@ def search_index_duplicates(num, target):
 
 
 
-def create_lst(n):
-    lst = list()
-    for i in range(n):
-        ele = int(input("Enter any value: "))
-        lst.append(ele)       
-    return lst
+def create_list(n):
+        return [int(input(f"Enter value {i}: ")) for i in range(n)]
 
 
 n = int(input("Enter the size of the list: "))
 
 
-num = create_lst(n)
+num = create_list(n)
 print(f"My Grid: {num}")
 
 target = int(input("Enter the target value: "))
