@@ -1,3 +1,15 @@
+"""
+Lower and Upper Bound in Sorted Array
+--------------------------------------
+Lower Bound: First index where nums[i] >= target
+Upper Bound: First index where nums[i] > target
+
+If no such index exists, both return len(nums) (sentinel value).
+
+Time Complexity: O(log n) | Space Complexity: O(1)
+"""
+
+
 def lower_bound(num, target):
     lb = len(num)
     low, high = 0, len(num) - 1
